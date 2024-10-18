@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>my site - {{ page_title }}</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Mon site web</h1>
+      <nav>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+        </ul>
+        <hr>
+      </nav>
+    </header>
+    <main>
+      {%- autoescape false -%}
+      {{ yocaml_body }}
+      {%- endautoescape -%}
+    </main>
+    <hr>
+    <footer>Copyright Didier Plaindoux</footer>
+  </body>
+</html>

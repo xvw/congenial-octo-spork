@@ -1,0 +1,4 @@
+(executable
+ (name blog)
+ (public_name blog)
+ (libraries yocaml yocaml_eio lib))

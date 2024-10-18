@@ -1,0 +1,17 @@
+{%- autoescape false -%}
+{{ yocaml_body }}
+{%- endautoescape -%}
+
+<hr>
+<h2>Dernières publications</h2>
+<ul>
+  {%- for article in articles -%}
+  <li>
+    <h3>{{ article.title }}</h3>
+    {%- if article.has_synopsis -%}
+    <p>{{ article.synopsis }}</p>
+    {%- endif -%}
+    <a href="{{ article.url }}">Lire {{ article.title}} publié le {{ article.date.repr.date }}</a>
+  </li>
+  {%- endfor -%}
+</ul>

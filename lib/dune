@@ -1,0 +1,4 @@
+(library
+ (name lib)
+ (public_name blog.lib)
+ (libraries yocaml yocaml_yaml yocaml_cmarkit yocaml_jingoo yocaml_syndication))

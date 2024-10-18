@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://xvw.lol/atom</id>
+  <title type="text">My feed</title>
+  <generator uri="https://github.com/xhtmlboi/yocaml" version="2">YOCaml</generator>
+  <updated>2024-10-18T00:00:00Z</updated>
+  <author>
+    <name>Didier Plaindoux</name>
+  </author>
+  <link href="https://xvw.lol"/>
+  <link href="https://xvw.lol/atom" rel="self"/>
+  <entry>
+    <id>https://xvw.lol/articles/foo.html</id>
+    <title type="text">Foo</title>
+    <updated>2024-10-18T00:00:00Z</updated>
+    <summary type="text">A second article about YOCaml</summary>
+    <link href="https://xvw.lol/articles/foo.html" rel="alternate" title="Foo"/>
+  </entry>
+  <entry>
+    <id>https://xvw.lol/articles/hello.html</id>
+    <title type="text">Hello World</title>
+    <updated>2024-10-18T00:00:00Z</updated>
+    <summary type="text">A first article about YOCaml</summary>
+    <link href="https://xvw.lol/articles/hello.html" rel="alternate" title="Hello World"/>
+  </entry>
+</feed>

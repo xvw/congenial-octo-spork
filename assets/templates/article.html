@@ -1,0 +1,14 @@
+<h2>{{ title }}</h2>
+publié le <time>{{ date.day}}/{{ date.month}}/{{ date.year}}</time>
+
+{%- if has_synopsis -%}
+<article>
+  {{ synopsis }}
+</article>
+{%- endif -%}
+
+{%- autoescape false -%}
+{{ yocaml_body }}
+{%- endautoescape -%}
+
+fin de l'article
